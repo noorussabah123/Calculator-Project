@@ -60,3 +60,43 @@
     grid-column: span 2;
   }
   
+  /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .calculator {
+    width: 80%;
+    padding: 30px 20px;
+  }
+
+  .display input {
+    font-size: 28px;
+  }
+
+  .buttons input[type="button"] {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .display input {
+    font-size: 25px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  input[type="button"][value="0"] {
+    grid-column: span 1;
+  }
+
+  .buttons input[type="button"] {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
